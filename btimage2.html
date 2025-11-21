@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <!-- Animation for Heading -->
+    <style>
+        @keyframes fadeSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+    
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        .animate-title span {
+            display: inline-block;
+            animation: fadeSlide 1s ease forwards infinite;
+        }
+    
+        .animate-title span:nth-child(1) {
+            animation-delay: 0s;
+        }
+    
+        .animate-title span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+    
+        .animate-title span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+    
+        .animate-title span:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+
+<body style="background-image: linear-gradient(rgb(178, 178, 247), pink); background-repeat: no-repeat;">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+        <div class="container-fluid">
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="/bootstrap/btimage2">Home</a></li>
+                    <li class="nav-item"><a  class="nav-link active" href="/bootstrap/now.html">Nature</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/bootstrap/city.html">City</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/bootstrap/culture.html">Culture</a></li>
+    
+                    
+                    </li>
+                </ul>
+                <button class="btn btn-outline-dark" type="submit">Button</button>
+                </nav>
+                
+                <h1 class="col pt-3 mt-2 text-center animate-title">
+                    <span>Image Gallery</span></h1>
+                <div class="row row-cols-1 row-cols-md-4 g-4   mt-1 flex-grow-1 ms-3">
+                    
+                
+                
+                    <div class="col">
+                        <div class="card border-4  shadow-lg">
+                            <div class="ratio ratio-4x3">
+                                <a href="https://i.pinimg.com/1200x/7f/b6/dd/7fb6ddf1d5c10da50f4e06310ab60d30.jpg">
+                                    <img src="https://i.pinimg.com/1200x/7f/b6/dd/7fb6ddf1d5c10da50f4e06310ab60d30.jpg"
+                                        class="w-100 h-100 object-fit-cover "></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">City View</h5>
+                                <p class="card-text">Beautiful landscape image.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col">
+                        <div class="card border-4  shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <a href="https://i.pinimg.com/1200x/9a/06/19/9a06194e046d2a892cfb1ead92107fde.jpg">
+                                    <img src="https://i.pinimg.com/1200x/9a/06/19/9a06194e046d2a892cfb1ead92107fde.jpg"
+                                        class="w-100 h-100 object-fit-cover"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Night Life</h5>
+                                <p class="card-text">Amazing city lights at night.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col">
+                        <div class="card border-4  shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <a href="https://i.pinimg.com/736x/27/2f/72/272f72200996be5c751ef67dbd092d4c.jpg">
+                                    <img src="https://i.pinimg.com/736x/27/2f/72/272f72200996be5c751ef67dbd092d4c.jpg"
+                                        class="w-100 h-100 object-fit-cover"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Culture</h5>
+                                <p class="card-text">Modern building structure.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col">
+                        <div class="card border-4  shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <a href="https://i.pinimg.com/1200x/43/d8/e2/43d8e2452b719baddc40fce081c368f4.jpg">
+                                    <img src="https://i.pinimg.com/1200x/43/d8/e2/43d8e2452b719baddc40fce081c368f4.jpg"
+                                        class="w-100 h-100 object-fit-cover"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Village</h5>
+                                <p class="card-text">Skyscraper near the lake.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col">
+                        <div class="card border-4  shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <a href="https://i.pinimg.com/736x/03/ea/ac/03eaacc5da0e36d8aaee1dfe60a23309.jpg">
+                                    <img src="https://i.pinimg.com/736x/03/ea/ac/03eaacc5da0e36d8aaee1dfe60a23309.jpg"
+                                        class="w-100 h-100 object-fit-cover"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Beach</h5>
+                                <p class="card-text">Sunny beach view.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col">
+                        <div class="card border-4 shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <a href="https://i.pinimg.com/1200x/0f/d9/99/0fd9997cab0f00ff48f8f6fddb1dcae9.jpg">
+                                    <img src="https://i.pinimg.com/1200x/0f/d9/99/0fd9997cab0f00ff48f8f6fddb1dcae9.jpg"
+                                        class="w-100 h-100 object-fit-cover"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Temple</h5>
+                                <p class="card-text">Peaceful historical place.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col">
+                        <div class="card border-4  shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <a href="https://i.pinimg.com/736x/02/59/69/0259699a168aea21ba838cd4873a1fdc.jpg">
+                                    <img src="https://i.pinimg.com/736x/02/59/69/0259699a168aea21ba838cd4873a1fdc.jpg"
+                                        class="w-100 h-100 object-fit-cover"></a>
+                
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mountain</h5>
+                                <p class="card-text">Blue water and boats.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col">
+                        <div class="card border-4 shadow-sm">
+                            <div class="ratio ratio-4x3">
+                                <a href="https://i.pinimg.com/1200x/6a/57/7a/6a577a2a9b366c3529e35542bc01617a.jpg">
+                                    <img src="https://i.pinimg.com/1200x/6a/57/7a/6a577a2a9b366c3529e35542bc01617a.jpg"
+                                        class="w-100 h-100 object-fit-cover"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Animal</h5>
+                                <p class="card-text">Beautiful skyline view.</p>
+                            </div>
+                        </div>
+                        
+            
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
