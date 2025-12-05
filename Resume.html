@@ -11,54 +11,128 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+    
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+       .skill-card,
+.hover-card {
+    transition: box-shadow .3s ease, transform .3s ease;
+}
+.card{
+     box-shadow: 0 15px 25px rgba(193, 200, 233, 0.5) !important; 
+}
+
+/* Hover shadow effect */
+.skill-card:hover,
+.hover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(255, 193, 7, 0.5) !important; /* Golden shadow */
+}
+
+    </style>
+
 </head>
 
 <body style="background-color: black;">
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="/images/WhatsApp Video 2025-12-01 at 10.48.40.mp4" type="video/mp4">
+        </video>
+    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand text-white ps-5" href="#">Sakshi Taksande</a>
+        <a class="navbar-brand text-warning fw-bold" href="#">Sakshi Taksande</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav " style="margin-left: 900px;">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active text-danger" aria-current="page" href="/bootstrap/webpage.html">Home</a>
+                    <a class="nav-link active text-danger" aria-current="page" href="/website/webpage.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-white" href="/bootstrap/about Us.html">About</a>
+                    <a class="nav-link text-white" href="/website/about Us.html ">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-white" href="/bootstrap/Resume.html">Resume</a>
+                    <a class="nav-link text-white" href="/website/Resume.html">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">Project</a>
+                    <a class="nav-link text-white" href="/website/projectbt.html">Project</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-white" href="#">Contact</a>
+                    <a class="nav-link text-white" href="/website/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="text-center">
-    <h1 class=" mt-5 text-white fa-bold " style="font-size: 80px;">Resume</h1></div>
-    <div class="text-center">
-        <p class=" text-white ms-5 me-5 mt-5 ">As a B.Tech CSE student passionate about full-stack development, I
-    have developed practical skills in designing,
-    developing, and deploying web applications. I enjoy working with modern frameworks and tools to build clean interfaces
-    and reliable backend systems. Through academic projects and internship experience, I have strengthened my understanding
-    of coding practices, debugging, teamwork, and user-centric design. I am committed to continuous learning, improving my
-    technical abilities, and taking on challenges that help me grow professionally.
-    </p></div>
-    
-    <div class="text-center">
-        <button type="button" class="btn btn-warning ms-5 font-monospace mt-4"
-        style="align-items: center; box-shadow: 0 0 15px 2px whitesmoke ;background-color: yellow;border-radius: 30px;height: 50px;width: 200px;">DOWNLOAD
-        CV</button></div>
-    
 
+<div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+        <h1 class="display-4 text-warning fw-bold mb-4">Resume</h1>
+        <hr class="w-25 mx-auto bg-warning mb-4">
+        <p class="lead mb-4 text-white">As a B.Tech CSE student passionate about full-stack development, I have developed
+            practical skills in designing, developing, and deploying web applications. I enjoy working with
+            modern frameworks and tools to build clean interfaces and reliable backend systems. Through academic
+            projects and internship experience, I have strengthened my understanding of coding practices,
+            debugging, teamwork, and user-centric design. I am committed to continuous learning, improving my
+            technical abilities, and taking on challenges that help me grow professionally.</p>
+        <button type="button" class="btn btn-warning fw-bold px-4 py-2">DOWNLOAD CV</button>
+    </div>
+</div>
+</div>
+
+<div class="container py-5" id="education">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <h1 class="display-4 text-warning fw-bold mb-4">Education</h1>
+            <hr class="w-25 mx-auto bg-warning mb-4">
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <!-- First Card -->
+        <div class="col-md-5 mb-4">
+            <div class="card skill-card bg-transparent text-white border-dark h-100 shadow">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">2023-2026</h5>
+                    <p class="card-text">Bachelor of Engineering in Computer Science Engineering</p>
+                    <p>Grade: First class with Distinction</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="col-md-5 mb-4">
+            <div class="card hover-card bg-transparent text-white border-dark h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">2022-2023</h5>
+                    <p class="card-text">Board: Maharashtra State Nagpur</p>
+                    <p>HSC Percentage: 60.83%</p>
+                    <p>SSC Percentage: 80%</p>
+                    <p>JEE Main Percentile: 70 Percentile</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
